@@ -7,6 +7,13 @@
   flex-direction: column;
   justify-content: space-between;
 
+
+  .card-padding {
+    padding: 0 4rem 4rem 12.2rem;
+    position: relative;
+    z-index: 100;
+  }
+
   .textContainer {
     flex: 1;
     align-self: flex-end;

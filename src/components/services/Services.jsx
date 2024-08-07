@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./services.scss";
-import { animate, motion, stagger, useInView } from "framer-motion";
+import {  motion, useInView } from "framer-motion";
+import SkillCard from "../skillsCard/SkillCard";
 
 const variants = {
   initial: {
@@ -14,7 +15,7 @@ const variants = {
     y: 0,
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
+      staggerChildren: 1.2,
     },
   },
 };
@@ -27,13 +28,13 @@ const Services = () => {
     <motion.div
       className="services"
       variants={variants}
-      initial="initial"
-      //   animate="animate"
+      initial={"initial"}
+        // animate="animate"
       // whileInView="animate"
       ref={ref}
       animate={"animate"} //isInView &&
     >
-      <motion.div className="textContainer">
+      {/* <motion.div className="textContainer" variants={variants}>
         <p>
           I focus on helping your brand grow
           <br /> and move forward
@@ -52,7 +53,7 @@ const Services = () => {
             <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
             Business.
           </h1>
-          <button>WHAT WE DO</button>
+          <button>WHAT WE DO?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -104,7 +105,14 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
+      <div className="card-padding">
+        <SkillCard/>
+      </div>
+
+
+
+
     </motion.div>
   );
 };

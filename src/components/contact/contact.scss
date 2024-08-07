@@ -61,6 +61,13 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      svg{
+        @include mobile {
+          height: 320px;
+          width: 320px;
+        }
+      }
     }
 
     form {

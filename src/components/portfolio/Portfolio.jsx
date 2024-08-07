@@ -11,7 +11,7 @@ const items = [
   {
     id: 2,
     title: "Next js",
-    img: "https://images.pexels.com/photos/10553205/pexels-photo-10553205.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    img: "/Wonderlust",
     desc: "nsectetur adipisicing elit. Vero mollitia quam nostrum maiores ad accusamus omnis perspiciatis, laudantium quod voluptate architecto cum, pariatur odio libero asperiores a magnam repudiandae eveniet",
   },
   {
@@ -33,19 +33,18 @@ const Single = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"]
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="Image" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
