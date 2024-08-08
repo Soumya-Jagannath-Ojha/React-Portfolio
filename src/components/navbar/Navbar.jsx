@@ -9,13 +9,13 @@ const Navbar = () => {
       {/* Sidebar */}
       <Sidebar />
       <div className="wrapper">
-        <motion.h2
+        <motion.p
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           Soumya's Portfolio
-        </motion.h2>
+        </motion.p>
         <div className="social">
           <a href="https://www.linkedin.com/in/soumya-jagannath-ojha/">
             <img src="/Linkedin.png" alt="" />
@@ -24,7 +24,7 @@ const Navbar = () => {
             <img src="/X.png" alt="" />
           </a>
           <a href="https://github.com/Soumya-Jagannath-Ojha">
-            <img src="/GitHub.png" alt="" />
+            <img src="/skills/GitHub.svg" alt="" />
           </a>
           <a href="">
             <img src="/Leetcode.png" alt="" />

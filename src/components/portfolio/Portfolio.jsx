@@ -4,26 +4,26 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/10553205/pexels-photo-10553205.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "WanderLust",
+    img: "./project/Wanderlust.png",
     desc: "nsectetur adipisicing elit. Vero mollitia quam nostrum maiores ad accusamus omnis perspiciatis, laudantium quod voluptate architecto cum, pariatur odio libero asperiores a magnam repudiandae eveniet",
   },
   {
     id: 2,
-    title: "Next js",
-    img: "/Wonderlust",
+    title: "WeatherApp",
+    img: "./project/weatherapp.png",
     desc: "nsectetur adipisicing elit. Vero mollitia quam nostrum maiores ad accusamus omnis perspiciatis, laudantium quod voluptate architecto cum, pariatur odio libero asperiores a magnam repudiandae eveniet",
   },
   {
     id: 3,
-    title: "Vanilla Js App",
-    img: "https://images.pexels.com/photos/2062800/pexels-photo-2062800.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "TodoList",
+    img: "./project/Todolist.png",
     desc: "nsectetur adipisicing elit. Vero mollitia quam nostrum maiores ad accusamus omnis perspiciatis, laudantium quod voluptate architecto cum, pariatur odio libero asperiores a magnam repudiandae eveniet",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/2062800/pexels-photo-2062800.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "Recipe Website",
+    img: "./project/Foodrecipe.png",
     desc: "nsectetur adipisicing elit. Vero mollitia quam nostrum maiores ad accusamus omnis perspiciatis, laudantium quod voluptate architecto cum, pariatur odio libero asperiores a magnam repudiandae eveniet",
   },
 ];
@@ -44,7 +44,7 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="Image" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>

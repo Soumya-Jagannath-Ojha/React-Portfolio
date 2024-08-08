@@ -35,11 +35,13 @@
         color: rebeccapurple;
         letter-spacing: 10px;
 
-        // @include mobile {
-        //   font-size: 36px;
-        //   align-items: center;
-        //   text-align: center;
-        // }
+        @include mobile {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 4px;
+        }
+        
+        
       }
       h1 {
         font-size: 88px;

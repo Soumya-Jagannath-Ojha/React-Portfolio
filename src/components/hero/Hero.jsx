@@ -52,7 +52,7 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Full Stack Developer.
           </motion.h1>
-          <motion.h2 variants={textVariants}>Soumya Jagannath Ojha</motion.h2>
+          <motion.h2 variants={textVariants} >Soumya Jagannath Ojha</motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.button whileHover={{ color: "orange" }} variants={textVariants} >
               See the Latest Works

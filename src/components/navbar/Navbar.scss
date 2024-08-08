@@ -12,7 +12,13 @@
 
     @include mobile {
       justify-content: flex-end;
-      padding: 20px;
+      padding: 10px;
+    }
+    h2{
+      @include mobile {
+        font-size: 12px;
+        padding-right: 2px;
+      }
     }
 
     span {
