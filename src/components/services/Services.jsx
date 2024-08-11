@@ -14,7 +14,7 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 4,
       staggerChildren: 1.2,
     },
   },
@@ -105,12 +105,15 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
+
+
+        
       </motion.div> */}
-      <div className="card-padding">
+      
+
+      <motion.div className="card-padding" variants={variants} ref={ref} >
         <SkillCard/>
-      </div>
-
-
+      </motion.div>
 
 
     </motion.div>

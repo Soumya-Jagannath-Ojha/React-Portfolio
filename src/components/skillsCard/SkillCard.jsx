@@ -1,6 +1,6 @@
 import "./skillcard.scss";
 import { Fade } from "react-reveal";
-
+import { motion } from "framer-motion";
 const skillSet = [
   {
     index: 1,
@@ -105,15 +105,39 @@ const skillSet = [
   },
 ];
 
+
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+
+
 const SkillCard = () => {
   return (
-    <div className="about-description-skills">
+    <motion.div className="about-description-skills" 
+    variants={variants}
+      initial={"initial"}
+        animate={"animate"}
+    >
       {skillSet.map((item, index) => (
-        <Fade bottom key={index + item}>
+        <motion.div key={index + item} variants={variants}>
           <a
             href={item.url}
             target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
             className="skill-container"
           >
             <img className="skills-icon" src={item.url} alt="SkillLogo" />
@@ -121,9 +145,9 @@ const SkillCard = () => {
             <span className="skill__name">{item.spanText}</span>
           </a>
           
-        </Fade>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
