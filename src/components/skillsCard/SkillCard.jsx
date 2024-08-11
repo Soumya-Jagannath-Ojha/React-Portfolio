@@ -127,16 +127,16 @@ const variants = {
 
 const SkillCard = () => {
   return (
-    <motion.div className="about-description-skills" 
-    variants={variants}
-      initial={"initial"}
-        animate={"animate"}
+    <div className="about-description-skills" 
+    // variants={variants}
+    //   initial={"initial"}
+    //     animate={"animate"}
     >
       {skillSet.map((item, index) => (
-        <motion.div key={index + item} variants={variants}>
+        <div key={index + item} >
           <a
             href={item.url}
-            target="_blank"
+            // target="_blank"
             // rel="noopener noreferrer"
             className="skill-container"
           >
@@ -145,9 +145,9 @@ const SkillCard = () => {
             <span className="skill__name">{item.spanText}</span>
           </a>
           
-        </motion.div>
+        </div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 
