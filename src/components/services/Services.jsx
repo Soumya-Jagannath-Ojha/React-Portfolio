@@ -21,9 +21,9 @@ const variants = {
 };
 
 const Services = () => {
-  const ref = useRef();
+  // const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-100px" });
+  // const isInView = useInView(ref, { margin: "-100px" });
   return (
     <motion.div
       className="services"
@@ -31,7 +31,7 @@ const Services = () => {
       initial={"initial"}
         // animate="animate"
       // whileInView="animate"
-      ref={ref}
+      // ref={ref}
       animate={"animate"} //isInView &&
     >
       {/* <motion.div className="textContainer" variants={variants}>
@@ -111,7 +111,7 @@ const Services = () => {
       </motion.div> */}
       
 
-      <motion.div className="card-padding" variants={variants} ref={ref} >
+      <motion.div className="card-padding" variants={variants}  >
         <SkillCard/>
       </motion.div>
 
