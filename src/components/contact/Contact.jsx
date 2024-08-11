@@ -3,6 +3,7 @@ import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { configDotenv } from "dotenv";
 
 const variants = {
   initial: {
@@ -31,8 +32,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm(import.meta.env.VITE_SERVICEID, import.meta.env.VITE_T_ID, formRef.current, {
+        publicKey: import.meta.env.VITE_KEY,
       })
       .then(
         () => {
@@ -62,10 +63,6 @@ const Contact = () => {
           <h2>Address</h2>
           <span>Cuttack, Odisha</span>
         </motion.div>
-        {/* <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+91 79796869</span>
-        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         <motion.div

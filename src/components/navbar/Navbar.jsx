@@ -17,16 +17,16 @@ const Navbar = () => {
           Soumya's Portfolio
         </motion.p>
         <div className="social">
-          <a href="https://www.linkedin.com/in/soumya-jagannath-ojha/">
+          <a href="https://www.linkedin.com/in/soumya-jagannath-ojha/" target="_main">
             <img src="/Linkedin.png" alt="" />
           </a>
-          <a href="https://twitter.com/Soumya_J_Ojha7/">
+          <a href="https://twitter.com/Soumya_J_Ojha7/" target="_main">
             <img src="/X.png" alt="" />
           </a>
-          <a href="https://github.com/Soumya-Jagannath-Ojha">
+          <a href="https://github.com/Soumya-Jagannath-Ojha" target="_main">
             <img src="/skills/GitHub.svg" alt="" />
           </a>
-          <a href="">
+          <a href="https://leetcode.com/u/Soumya_Jagannath_Ojha/" target="_main">
             <img src="/Leetcode.png" alt="" />
           </a>
         </div>

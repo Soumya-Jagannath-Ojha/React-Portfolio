@@ -25,11 +25,13 @@ const variants = {
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-
+  const toggleSidebar = (state) => {
+    setOpen(state);
+  }
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links toggleSidebar={toggleSidebar} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>

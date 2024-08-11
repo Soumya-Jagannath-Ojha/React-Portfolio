@@ -39,6 +39,10 @@
       @include mobile {
         font-size: 36px;
       }
+      @include tablet {
+        font-size: 55px;
+        line-height: 60px;
+      }
 
     }
 
@@ -64,6 +68,10 @@
 
       svg{
         @include mobile {
+          height: 320px;
+          width: 320px;
+        }
+        @include tablet {
           height: 320px;
           width: 320px;
         }

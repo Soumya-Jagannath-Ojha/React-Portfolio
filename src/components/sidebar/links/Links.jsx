@@ -24,11 +24,13 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({toggleSidebar}) => {
   const items = ["Homepage", "Skill", "Projects", "Contact" ];
-
+  const handelclick = () => {
+    toggleSidebar(false);
+  }
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div className="links" variants={variants} >
       {items.map((item) => (
         <motion.a
           href={`#${item}`}
@@ -36,7 +38,7 @@ const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          
+          onClick={handelclick}
         >
           {item}
         </motion.a>

@@ -29,6 +29,13 @@
         align-items: center;
         text-align: center;
       }
+      @include tablet {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
 
       h2 {
         font-size: 30px;
@@ -48,6 +55,11 @@
 
         @include mobile {
           font-size: 36px;
+          // align-items: center;
+          // text-align: center;
+        }
+        @include tablet {
+          font-size: 56px;
           // align-items: center;
           // text-align: center;
         }
@@ -90,6 +102,12 @@
       border-radius: 25px;
     }
     @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+    @include tablet {
       height: 50%;
       width: 100%;
       top: unset;

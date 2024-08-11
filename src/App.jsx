@@ -9,20 +9,21 @@ import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 
 function App() {
+  
   return (
-    <div>
+    <div >
       <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+      <section id="Skill">
+        <Parallax type="skills" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      <section id="Projects">
         <Parallax type="portfolio" />
       </section>
 

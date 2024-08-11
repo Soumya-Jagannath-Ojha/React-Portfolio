@@ -9,6 +9,16 @@
     align-items: center;
     justify-content: space-around; //Space Between
     height: 100%;
+    
+    p{
+      font-size: 24px;
+      font-weight: 800;
+
+      @include mobile {
+        font-size: 16px;
+        padding-right: 15px;
+      }
+    }
 
     @include mobile {
       justify-content: flex-end;
@@ -32,9 +42,18 @@
       display: flex;
       gap: 20px;
 
+      @include mobile {
+        gap: 10px;
+      }
+
       img {
         width: 18px;
         height: 18px;
+
+        @include mobile {
+          width: 14px;
+          height: 14px;
+        }
       }
     }
   }
