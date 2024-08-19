@@ -17,12 +17,12 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="Skill">
+      {/* <section id="Skill">
         <Parallax type="skills" />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <Services />
-      </section>
+      </section> */}
       <section id="Projects">
         <Parallax type="portfolio" />
       </section>
